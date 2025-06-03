@@ -192,3 +192,4 @@ This template is available under the MIT License.
 
 **Built with ❤️ for modern web development**
 # template
+# buzizi
