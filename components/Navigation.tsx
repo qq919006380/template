@@ -14,7 +14,8 @@ export default function Navigation() {
   const navigationItems = [
     { key: 'home', href: `/${locale}` },
     { key: 'about', href: `/${locale}/about` },
-    { key: 'series', href: `/${locale}/series` },
+    { key: 'contact', href: `/${locale}/contact` },
+
   ];
 
   return (

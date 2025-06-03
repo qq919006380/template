@@ -18,12 +18,7 @@
   },
   "navigation": {
     "home": "首页",
-    "wallpapers": "壁纸",
-    "series": "系列",
-    "blog": "博客",
     "about": "关于",
-    "services": "服务",
-    "products": "产品",
     "contact": "联系"
   },
   "home": {
