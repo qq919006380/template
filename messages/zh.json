@@ -1,0 +1,355 @@
+{
+  "common": {
+    "labubu": "Labubu",
+    "popmart": "POP MART",
+    "zimomo": "Zimomo",
+    "kasingLung": "Kasing Lung",
+    "readMore": "閱讀更多",
+    "downloadWallpapers": "下載桌布",
+    "exploreSeries": "探索系列",
+    "readGuides": "閱讀指南",
+    "viewSeries": "查看系列",
+    "readArticle": "閱讀文章",
+    "learnMore": "了解更多",
+    "getStarted": "立即開始",
+    "viewMore": "查看更多",
+    "contactUs": "聯絡我們",
+    "aboutUs": "關於我們"
+  },
+  "navigation": {
+    "home": "首頁",
+    "wallpapers": "桌布",
+    "series": "系列",
+    "blog": "部落格",
+    "about": "關於",
+    "services": "服務",
+    "products": "產品",
+    "contact": "聯絡"
+  },
+  "home": {
+    "title": "歡迎來到您的網站",
+    "subtitle": "您引人注目的副標題，描述您的價值主張",
+    "description": "詳細描述您提供的服務以及為什麼訪客應該選擇您。",
+    "hero": {
+      "title": "您的英雄標題",
+      "subtitle": "您的英雄副標題與行動呼籲",
+      "cta": "立即開始"
+    },
+    "features": {
+      "title": "為什麼選擇我們",
+      "subtitle": "發現我們的不同之處",
+      "feature1": {
+        "title": "特色一",
+        "description": "您第一個主要特色或優勢的描述"
+      },
+      "feature2": {
+        "title": "特色二", 
+        "description": "您第二個主要特色或優勢的描述"
+      },
+      "feature3": {
+        "title": "特色三",
+        "description": "您第三個主要特色或優勢的描述"
+      }
+    },
+    "featuresTitle": "發現 {labubu} 的魅力",
+    "featuresSubtitle": "從收藏指南到系列介紹，我們提供最專業的 {labubu} 內容",
+    "wallpapersTitle": "高清桌布",
+    "wallpapersDescription": "最完整的 {labubu} 高清桌布收藏，支援多種解析度下載來裝飾您的設備螢幕",
+    "blogTitle": "收藏指南",
+    "blogDescription": "{labubu} 系列深度分析，包括稀有變體識別、與 {zimomo} 的差異等專業內容",
+    "seriesTitle": "完整系列指南",
+    "seriesDescription": "完整收藏所有 {labubu} 系列，包括發行日期、參考價格和詳細資訊",
+    "featuredCollectionsTitle": "精選收藏",
+    "featuredCollectionsSubtitle": "探索我們最愛的 {labubu} 系列，每個都有其獨特的魅力和故事",
+    "angelInCloudsTitle": "雲中天使系列",
+    "angelInCloudsDescription": "空靈之美與收藏魅力相遇，這個天堂系列展現了帶著天使翅膀在夢幻雲朵中飄浮的 {labubu}。",
+    "monstersTitle": "怪獸系列",
+    "monstersDescription": "進入一個可愛與神秘相遇的世界，{labubu} 變身為可愛的怪獸變體。",
+    "angelInCloudsAlt": "{labubu} 雲中天使系列",
+    "monstersAlt": "{labubu} 怪獸系列",
+    "ctaTitle": "加入 {labubu} 社群",
+    "ctaDescription": "與其他收藏家連結，發現稀有變體，並隨時掌握最新的 {labubu} 發行和指南。",
+    "stats": {
+      "hdWallpapers": "高清桌布",
+      "seriesGuides": "系列指南",
+      "collectors": "收藏家"
+    }
+  },
+  "testimonials": {
+    "reviewsCount": "{count} 條評價",
+    "testimonials": [
+      {
+        "name": "陳小美",
+        "role": "認證收藏家",
+        "avatar": "陳",
+        "content": "我找到最全面的 {labubu} 收藏指南！桌布品質超棒，系列資訊非常詳細。"
+      },
+      {
+        "name": "王大明",
+        "role": "POP MART 愛好者",
+        "avatar": "王",
+        "content": "超愛這個互動畫廊！幫助我識別我的收藏中還缺少哪些 {labubu} 變體。稀有度指南超準確。"
+      },
+      {
+        "name": "林小雅",
+        "role": "設計師",
+        "avatar": "林",
+        "content": "我設備的完美桌布！品質超棒，我很喜歡他們定期更新新系列發行的方式。"
+      },
+      {
+        "name": "張志強",
+        "role": "2020年起收藏家",
+        "avatar": "張",
+        "content": "終於有一個網站能正確區分 {labubu} 和 {zimomo}！系列指南幫助我避免買到重複的。"
+      }
+    ]
+  },
+  "wallpapers": {
+    "title": "{labubu} 高清桌布 | 免費手機與桌面下載",
+    "description": "免費下載 200+ 張優質 {labubu} 高清桌布。支援 iPhone、Android 手機和桌面。定期更新新設計和稀有變體桌布。"
+  },
+  "series": {
+    "title": "系列指南",
+    "subtitle": "完整收藏所有 {labubu} 系列，包括發行日期、參考價格、稀有度等級和詳細資訊。從經典系列到限定版，一站式指南了解 {labubu} 收藏價值。",
+    "totalSeries": "總系列數",
+    "totalVariants": "總變體數",
+    "limitedEditions": "限定版",
+    "collectionRate": "收藏率",
+    "colorVariants": "顏色變體",
+    "status": "狀態",
+    "collectionTipsTitle": "收藏技巧",
+    "rarity": {
+      "common": "普通",
+      "rare": "稀有",
+      "superrare": "超稀有",
+      "limitededition": "限定版",
+      "exclusive": "獨家版",
+      "classic": "經典",
+      "regular": "常規",
+      "limited": "限量",
+      "holidaylimited": "節日限定",
+      "seasonallimited": "季節限定",
+      "specialmaterial": "特殊材質",
+      "premiumlimited": "高級限定",
+      "anniversaryedition": "週年版",
+      "collectorsedition": "收藏家版",
+      "ultrarare": "超稀有"
+    },
+    "statusLabel": {
+      "available": "有現貨",
+      "soldout": "售完",
+      "limited": "限量"
+    },
+    "collectionTips": {
+      "tip1": {
+        "title": "收藏策略",
+        "description": "專業收藏指南，幫助您建立完美的 Labubu 收藏，做出明智的投資選擇。"
+      },
+      "tip2": {
+        "title": "價值評估",
+        "description": "了解每個系列的收藏價值和市場價格趨勢，做出明智的購買決策。"
+      },
+      "tip3": {
+        "title": "社群連結",
+        "description": "與其他收藏家連結，交換、分享經驗，一起發現稀有變體。"
+      }
+    },
+    "seriesDetails": {
+      "metaTitle": "Labubu 系列詳情與收藏家資訊",
+      "metaDescription": "探索 Labubu {seriesName} 系列的詳細資訊，包括發行日期（{releaseDate}）、價格（{price}）、稀有度（{rarity}）和可用顏色。{description}",
+      "imageAlt": "Labubu 系列",
+      "mainImageAlt": "主圖片",
+      "backToSeries": "返回所有系列",
+      "releaseDate": "發行日期",
+      "referencePrice": "參考價格",
+      "collectorValue": "收藏價值",
+      "specialFeatures": "特殊功能",
+      "notFound": {
+        "title": "系列未找到",
+        "description": "糟糕！我們找不到您要尋找的 Labubu 系列。"
+      },
+      "features": {
+        "largeFormat": "大尺寸：22.8 英寸高",
+        "movableEyes": "可動眼睛，表情豐富",
+        "materials": "材質：PVC/聚酯纖維/ABS",
+        "ageRestriction": "不適合 15 歲以下兒童。"
+      }
+    }
+  },
+  "blog": {
+    "title": "部落格",
+    "subtitle": "最新見解和更新",
+    "featuredPosts": "精選文章",
+    "allPosts": "所有文章",
+    "readTime": "分鐘閱讀",
+    "publishedOn": "發布於",
+    "resourcesTitle": "全面 {labubu} 收藏資源",
+    "resourcesDescription": "我們的部落格涵蓋從稀有 {labubu} 變體和市場分析到 Pop Mart 合作和認證技巧的所有內容。發現最新的收藏策略，展現 {labubu}、{zimomo} 和其他設計師玩具。",
+    "whatIsLabubu": {
+      "title": "什麼是 {labubu}？",
+      "subtitle": "這個可愛角色的起源與魅力完整指南",
+      "category": "基礎知識",
+      "publishDate": "發布日期：2024年11月20日",
+      "readTime": "閱讀時間：5分鐘",
+      "imageAlt": "什麼是 Labubu - 角色起源指南",
+      "sections": {
+        "origins": {
+          "title": "{labubu} 的起源",
+          "content": "{labubu} 是來自香港的原創 IP 角色，由著名設計師 {kasingLung} 創作。這個可愛的角色首次誕生於 2015 年，以其獨特的精靈外觀和神秘魅力迅速在設計師玩具界留下印記。\"{labubu}\" 這個名字來自 \"La\" 和 \"Bubu\" 的組合，象徵著快樂與可愛的融合。"
+        },
+        "features": {
+          "title": "角色設計特色",
+          "intro": "{labubu} 最具特色的特徵包括：",
+          "imageAlt": "Labubu 角色設計特色",
+          "pointedEars": {
+            "title": "尖耳朵",
+            "description": "精靈般的尖耳朵是 {labubu} 最標誌性的特徵"
+          },
+          "largeEyes": {
+            "title": "大眼睛",
+            "description": "圓潤的大眼睛充滿好奇心和純真"
+          },
+          "compactBody": {
+            "title": "緊湊身體",
+            "description": "Q版身體比例讓人想要收藏"
+          },
+          "colorPalette": {
+            "title": "豐富色彩調色盤",
+            "description": "從經典粉色到神秘黑色，每種配色都有獨特魅力"
+          }
+        },
+        "cultural": {
+          "title": "文化意義與含義",
+          "intro": "{labubu} 不僅僅是一個可愛的角色；它還承載著深刻的文化意義。在設計師的視野中，{labubu} 代表著：",
+          "innocence": {
+            "title": "純真與好奇心",
+            "description": "保持對世界的好奇心和純潔的心"
+          },
+          "friendship": {
+            "title": "友誼與陪伴",
+            "description": "成為人們生活中忠實的伴侶"
+          },
+          "personality": {
+            "title": "個性與表達",
+            "description": "通過不同設計表達個人風格"
+          },
+          "collection": {
+            "title": "收藏與分享",
+            "description": "連接全世界收藏家的橋樑"
+          }
+        },
+        "status": {
+          "title": "在設計師玩具界的地位",
+          "content": "自從 2019 年與 {popmart} 合作推出盲盒系列以來，{labubu} 迅速成為設計師玩具界的明星角色。其獨特的設計風格和豐富的系列變化為其在全世界贏得了大量忠實粉絲。無論是限定版還是常規發布，{labubu} 商品往往在發布後迅速售罄，成為收藏家們高度追捧的對象。",
+          "imageAlt": "Labubu 收藏與人氣"
+        },
+        "popularity": {
+          "title": "為什麼 {labubu} 如此受歡迎？",
+          "intro": "{labubu} 的成功並非偶然；其受歡迎程度源於多種因素：",
+          "design": {
+            "title": "獨特的設計語言",
+            "description": "既可愛又神秘迷人的設計風格"
+          },
+          "quality": {
+            "title": "高品質工藝",
+            "description": "精緻的做工和優質材料"
+          },
+          "variety": {
+            "title": "豐富的系列變化",
+            "description": "持續發布新系列保持新鮮感"
+          },
+          "collectible": {
+            "title": "強烈的收藏吸引力",
+            "description": "限定版和隱藏款增加收藏樂趣"
+          },
+          "social": {
+            "title": "社交媒體傳播",
+            "description": "跨平台廣泛分享和討論"
+          }
+        },
+        "conclusion": {
+          "title": "結論",
+          "content": "{labubu} 不僅僅是一個設計師玩具角色；它已經成為一種文化現象和生活方式的象徵。無論您是設計師玩具新手還是資深收藏家，{labubu} 都能為您的生活帶來獨特的快樂和陪伴。在這個快節奏的世界中，讓 {labubu} 提醒我們保持那份最初的純真和對美好事物的渴望。"
+        }
+      },
+      "tip": {
+        "title": "收藏家小貼士",
+        "content": "如果您剛接觸 {labubu}，我們建議從經典系列開始。這些系列不僅具有代表性，而且相對容易獲得，是了解 {labubu} 魅力的最佳入門點。"
+      },
+      "navigation": {
+        "backToBlog": "返回部落格",
+        "nextArticle": "下一篇：最稀有變體"
+      }
+    },
+    "relatedArticles": {
+      "title": "相關文章",
+      "rarestLabubu": {
+        "title": "最稀有的 Labubu 變體",
+        "description": "最稀有和最有價值的 Labubu 變體詳細清單"
+      },
+      "labububVsZimomo": {
+        "title": "{labubu} vs {zimomo} 差異",
+        "description": "這兩個熱門 IP 之間設計差異和收藏價值的深入分析"
+      },
+      "priceGuide": {
+        "title": "Labubu 價格指南 2024",
+        "description": "包含全球價格比較和聰明購買技巧的完整價格指南"
+      }
+    }
+  },
+  "meta": {
+    "siteTitle": "您的網站標題 - 專業與現代",
+    "siteName": "您的網站名稱",
+    "siteDescription": "您的全面網站描述，用於SEO優化。請包含您的主要關鍵詞和價值主張。",
+    "authorName": "您的公司名稱",
+    "creator": "您的公司",
+    "publisher": "您的出版商",
+    "twitterHandle": "@yourhandle",
+    "category": "商業",
+    "keywords": "關鍵詞1, 關鍵詞2, 關鍵詞3, seo, 優化",
+    "seriesTitle": "Labubu 系列指南 | 完整收藏與價格 2024",
+    "seriesDescription": "完整的 Labubu 系列收藏指南，包含發行日期、參考價格和稀有度等級。從經典系列到限定版，為收藏家提供全方位資訊。",
+    "blogTitle": "Labubu 部落格 - 收藏指南與專家見解",
+    "blogDescription": "發現 Labubu 收藏專家指南、稀有變體識別、系列分析，以及來自經驗豐富收藏家的專業技巧。",
+    "blog": {
+      "whatIsLabubu": {
+        "title": "什麼是 {labubu}？角色起源完整指南",
+        "description": "深入了解 {labubu} 的起源、設計理念和文化意義。從創作背景到角色特色，全面解析這個全球熱門 IP。"
+      }
+    }
+  },
+  "about": {
+    "title": "關於我們",
+    "subtitle": "了解更多關於我們的公司和使命",
+    "description": "全面的關於我們內容，與您的受眾建立信任和可信度。"
+  },
+  "contact": {
+    "title": "聯絡我們",
+    "subtitle": "與我們的團隊取得聯繫",
+    "form": {
+      "name": "全名",
+      "email": "電子郵件地址",
+      "subject": "主題",
+      "message": "訊息",
+      "submit": "發送訊息"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} 您的公司名稱。保留所有權利。",
+    "privacy": "隱私政策",
+    "terms": "服務條款",
+    "sitemap": "網站地圖"
+  },
+  "errors": {
+    "404": {
+      "title": "找不到頁面",
+      "description": "您要尋找的頁面不存在。",
+      "backHome": "返回首頁"
+    },
+    "500": {
+      "title": "出了些問題",
+      "description": "我們正在努力解決這個問題。",
+      "tryAgain": "再試一次"
+    }
+  }
+} 

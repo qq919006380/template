@@ -1,0 +1,304 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Labubu.city 开发规范
+- 不需要改完都执行pnpm run dev，本地一启动http://localhost:3000
+## 🌐 多语言国际化 (i18n) 要求
+
+### 语言区域配置
+- **支持的语言区域**: `us`, `ph`, `my`, `tw`
+- **默认语言区域**: `us` (英语 - 美国)
+- **路由结构**: 使用 Next.js app router 的 `[locale]` 动态路由段
+- **URL 结构**: `/{locale}/{page}` (例如: `/us/blog`, `/tw/series`)
+
+### 翻译标准
+- **翻译文件**: 存储在 `/messages/{locale}.json` 
+- **命名空间组织**: 
+  - `meta` - SEO 元数据 (标题、描述)
+  - `common` - 共用术语 (Labubu, POP MART, Zimomo 等)
+  - `navigation` - 导航菜单项
+  - `home` - 首页内容
+  - `wallpapers` - 壁纸区块
+  - `blog` - 博客内容
+  - `testimonials` - 用户评价
+
+### 实现规则
+```typescript
+// 客户端组件使用 next-intl hooks 进行翻译
+import {useTranslations} from 'next-intl';
+const t = useTranslations('namespace');
+
+// 服务端组件使用 getTranslations
+import {getTranslations} from 'next-intl/server';
+const t = await getTranslations('namespace');
+
+// 所有动态页面属性必须包含 locale 参数
+params: Promise<{locale: string; [key: string]: string}>
+```
+
+## 🚀 SEO 和 Meta 标签要求
+
+### Meta 标题标准
+- **长度**: 最多 40-60 个字符
+- **格式**: `{页面标题} | Labubu.city`
+- **关键词**: 必须包含 "Labubu" 和相关描述性词汇
+- **模板**: 使用 Next.js 元数据标题模板系统
+
+### Meta 描述标准  
+- **长度**: 140-160 个字符
+- **关键词**: 包含 "Labubu"、"HD壁纸"、"收藏"、"指南"
+- **行动召唤**: 包含动作词如 "下载"、"探索"、"发现"
+- **本地化**: 为每个语言区域翻译描述
+
+### 每个页面必需的 Meta 标签
+```typescript
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}): Promise<Metadata> {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'meta'});
+  
+  return {
+    title: t('pageTitle'),
+    description: t('pageDescription'),
+    keywords: ["Labubu", "collectible toys", "blind box", "POP MART", "designer toys"],
+    alternates: {
+      canonical: `https://labubu.city/${locale}/current-page`,
+      languages: {
+        'en-US': 'https://labubu.city/us/current-page',
+        'en-PH': 'https://labubu.city/ph/current-page',
+        'ms-MY': 'https://labubu.city/my/current-page',
+        'zh-TW': 'https://labubu.city/tw/current-page',
+      }
+    },
+    openGraph: {
+      type: 'website',
+      locale: mapLocaleToOG(locale),
+      url: `https://labubu.city/${locale}/current-page`,
+      title: t('pageTitle'),
+      description: t('pageDescription'),
+      siteName: 'Labubu.city',
+      images: [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: t('pageTitle')
+      }]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('pageTitle'),
+      description: t('pageDescription'),
+      images: ['/twitter-image.jpg']
+    }
+  };
+}
+```
+
+## 🏗️ SSR (服务端渲染) 规则
+
+### 静态生成要求
+- **使用 `generateStaticParams`** 为所有动态路由
+- **预生成所有语言区域变体** 在构建时
+- **实现 `setRequestLocale`** 用于静态渲染优化
+
+### 页面结构标准
+```typescript
+// 所有带动态语言区域的页面都需要
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
+}
+
+// 为静态渲染设置语言区域
+export default async function Page({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  setRequestLocale(locale);
+  
+  // 页面内容
+}
+```
+
+### 图片优化
+- **使用 Next.js Image 组件** 处理所有图片
+- **提供多种尺寸**: `sizes="(max-width: 768px) 100vw, 896px"`
+- **包含描述性 alt 文本** 与 Labubu 内容相关
+- **设置优先级** 为首屏图片
+
+## 📈 关键词密度要求
+
+### 主要关键词 (目标密度: 1-2%)
+- **"Labubu"** - 必须出现在标题、第一段、标题中
+- **"collectible toys"** - 用于产品描述
+- **"HD wallpapers"** - 用于壁纸相关内容
+- **"POP MART"** - 讨论品牌合作时使用
+
+### 次要关键词 (目标密度: 0.5-1%)
+- **"designer toys"**、**"blind box"**、**"Zimomo"**、**"Kasing Lung"**
+- **"series guide"**、**"collection tips"**、**"rare variants"**
+
+### 长尾关键词 (自然整合)
+- **"Labubu vs Zimomo difference"**
+- **"rarest Labubu variants 2024"**
+- **"Labubu price guide"**
+- **"Angel in Clouds series"**
+
+### SEO 内容结构
+```typescript
+// 博客文章结构示例
+<article>
+  <h1>标题中包含主要关键词</h1>
+  <p>第一段必须在前150字内包含主要关键词</p>
+  
+  <h2>包含相关关键词的二级标题</h2>
+  <p>自然变化关键词的内容</p>
+  
+  // 为图片添加富含关键词的 alt 文本
+  <Image alt="Labubu Angel in Clouds 系列收藏玩具指南" />
+  
+  // 使用关键词锚文本进行内部链接
+  <Link href="/blog/related-topic">相关 Labubu 指南</Link>
+</article>
+```
+
+## 📝 内容创作标准
+
+### 博客文章要求
+- **最小长度**: 核心内容至少 1500 字
+- **标题结构**: H1 → H2 → H3 层次结构
+- **关键词分布**: 自然地在整个内容中分布关键词
+- **内部链接**: 使用富含关键词的锚文本链接到相关页面
+- **Meta 架构**: 包含文章架构标记
+
+### 翻译质量标准
+- **保持关键词密度** 在所有语言区域
+- **适当调整文化引用** (例如：POP MART 在不同地区的受欢迎程度)
+- **保留品牌名称** (Labubu、Zimomo、Kasing Lung 保持英文)
+- **本地化货币和计量单位** 以符合地区相关性
+
+## 🔧 技术实现
+
+### 网站地图生成
+- **包含所有语言区域变体** 为每个页面
+- **设置适当优先级**: 首页 (1.0)、主要部分 (0.8-0.9)、博客文章 (0.7)
+- **根据内容类型更新 changeFrequency**
+- **在网站地图条目中包含 hreflang 替代**
+
+### 结构化数据要求
+```typescript
+// 所有页面必需的 JSON-LD
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: pageTitle,
+  description: pageDescription,
+  url: canonicalUrl,
+  inLanguage: locale,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Labubu Collection Hub',
+    url: 'https://labubu.city'
+  }
+};
+
+// 博客文章需要额外的文章架构
+const articleSchema = {
+  '@type': 'Article',
+  headline: articleTitle,
+  author: {
+    '@type': 'Organization',
+    name: 'Labubu.city'
+  },
+  datePublished: publishDate,
+  dateModified: lastModified
+};
+```
+
+## ✅ 质量保证检查清单
+
+部署任何页面前，验证：
+- [ ] **标题长度** 40-60 字符
+- [ ] **描述长度** 140-160 字符  
+- [ ] **主要关键词** 出现在标题和第一段
+- [ ] **所有图片** 都有描述性 alt 文本
+- [ ] **规范 URL** 设置正确
+- [ ] **所有支持语言区域的 Hreflang 标签**
+- [ ] **OpenGraph** 和 **Twitter Card** 元数据
+- [ ] **JSON-LD 结构化数据** 有效
+- [ ] **内部链接** 使用富含关键词的锚文本
+- [ ] **移动端响应式** 已测试
+- [ ] **页面加载速度** 低于 3 秒
+
+## 🎯 性能目标
+
+- **核心网络生命力**: LCP < 2.5s, FID < 100ms, CLS < 0.1
+- **SEO 分数**: 95+ (使用 Lighthouse 审计)
+- **可访问性**: WCAG 2.1 AA 合规
+- **国际化**: 完全支持语言区域，无内容缺口
+
+## 🚀 部署标准
+
+- **部署前测试所有语言区域**
+- **验证 sitemap.xml** 生成包含所有页面
+- **检查 robots.txt** 允许适当的爬取
+- **验证 hreflang** 实现
+- **监控搜索控制台** 索引问题
+- **定期更新内容** 以维持搜索排名
+- **支持cloudflare** 支持cloudflare pages的部署
+
+## 🔍 关键词策略细节
+
+### Labubu 核心词汇表
+- **品牌词**: Labubu, POP MART, Zimomo, Kasing Lung
+- **产品词**: 盲盒、设计师玩具、收藏玩具、限定版
+- **功能词**: HD壁纸、系列指南、收藏技巧、稀有变体
+- **地域词**: 各地区本地化关键词
+
+### 内容关键词分布规则
+1. **文章标题**: 必含 1-2 个主要关键词
+2. **第一段**: 前 150 字内包含主要关键词
+3. **H2 标题**: 包含次要关键词或长尾词
+4. **图片 Alt**: 结合关键词和描述性文本
+5. **内链锚文本**: 使用目标页面的主要关键词
+
+### SEO 内容模板
+```typescript
+// 标准博客文章模板
+export default function BlogPost() {
+  return (
+    <article>
+      <h1>包含主要关键词的标题 - Labubu 相关主题</h1>
+      
+      <p>开头段落必须在前150字内自然包含"Labubu"和其他主要关键词...</p>
+      
+      <Image 
+        src="/image.jpg" 
+        alt="Labubu [系列名] 收藏指南 - [具体描述]"
+        sizes="(max-width: 768px) 100vw, 896px"
+        priority={isAboveFold}
+      />
+      
+      <h2>包含次要关键词的章节标题</h2>
+      <p>内容中自然分布相关关键词，避免关键词堆砌...</p>
+      
+      <Link href="/related-article">
+        使用关键词丰富的锚文本链接
+      </Link>
+    </article>
+  );
+}
+```
+
+## 📊 质量监控指标
+
+### SEO 指标
+- **关键词排名**: 监控主要关键词在各搜索引擎的排名
+- **点击率 (CTR)**: 搜索结果页面的点击率优化
+- **页面收录率**: 确保所有页面都被搜索引擎收录
+- **网站速度**: Core Web Vitals 持续监控
+
+### 多语言指标
+- **各语言区域流量分布**: 确保所有区域都有适当的流量
+- **翻译质量**: 定期审核翻译内容的准确性和SEO效果
+- **本地化效果**: 监控各地区用户的参与度指标
+
+这个规范确保 Labubu.city 项目在多语言支持、SEO优化、服务端渲染和关键词密度方面都达到最高标准！🚀

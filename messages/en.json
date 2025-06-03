@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "siteTitle": "Your Site Title - Professional & Modern",
+    "siteName": "Your Site Name",
+    "siteDescription": "Your comprehensive site description for SEO optimization. Include your main keywords and value proposition.",
+    "authorName": "Your Company Name",
+    "creator": "Your Company",
+    "publisher": "Your Publisher",
+    "twitterHandle": "@yourhandle",
+    "category": "business",
+    "keywords": "keyword1, keyword2, keyword3, seo, optimization",
+    "seriesTitle": "Labubu Series Collection | Complete Guide & Prices",
+    "seriesDescription": "Complete guide to all Labubu series including release dates, prices, rarity levels and detailed information. From classic collections to limited editions."
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewMore": "View More",
+    "contactUs": "Contact Us",
+    "aboutUs": "About Us",
+    "labubu": "Labubu",
+    "popmart": "POP MART",
+    "zimomo": "Zimomo",
+    "kasingLung": "Kasing Lung",
+    "downloadWallpapers": "Download Wallpapers",
+    "exploreSeries": "Explore Series",
+    "readGuides": "Read Guides",
+    "viewSeries": "View Series",
+    "readArticle": "Read Article"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "products": "Products",
+    "blog": "Blog",
+    "contact": "Contact",
+    "wallpapers": "Wallpapers",
+    "series": "Series"
+  },
+  "home": {
+    "title": "Welcome to Your Site",
+    "subtitle": "Your compelling subtitle that describes your value proposition",
+    "description": "Detailed description of what you offer and why visitors should choose you.",
+    "hero": {
+      "title": "Your Hero Title",
+      "subtitle": "Your hero subtitle with call to action",
+      "cta": "Get Started Today"
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "subtitle": "Discover what makes us different",
+      "feature1": {
+        "title": "Feature One",
+        "description": "Description of your first key feature or benefit"
+      },
+      "feature2": {
+        "title": "Feature Two", 
+        "description": "Description of your second key feature or benefit"
+      },
+      "feature3": {
+        "title": "Feature Three",
+        "description": "Description of your third key feature or benefit"
+      }
+    }
+  },
+  "series": {
+    "title": "Series Guide",
+    "subtitle": "Complete collection of all {labubu} series including release dates, reference prices, rarity levels and detailed information. From classic series to limited editions, your one-stop guide to {labubu} collection value.",
+    "totalSeries": "Total Series",
+    "totalVariants": "Total Variants",
+    "limitedEditions": "Limited Editions",
+    "collectionRate": "Collection Rate",
+    "colorVariants": "Color Variants",
+    "status": "Status",
+    "collectionTipsTitle": "Collection Tips",
+    "rarity": {
+      "common": "Common",
+      "rare": "Rare",
+      "superrare": "Super Rare",
+      "limitededition": "Limited Edition",
+      "exclusive": "Exclusive",
+      "classic": "Classic",
+      "regular": "Regular",
+      "limited": "Limited",
+      "holidaylimited": "Holiday Limited",
+      "seasonallimited": "Seasonal Limited",
+      "specialmaterial": "Special Material",
+      "premiumlimited": "Premium Limited",
+      "anniversaryedition": "Anniversary Edition",
+      "collectorsedition": "Collector's Edition",
+      "ultrarare": "Ultra Rare"
+    },
+    "statusLabel": {
+      "available": "Available",
+      "soldout": "Sold Out",
+      "limited": "Limited"
+    },
+    "collectionTips": {
+      "tip1": {
+        "title": "Collection Strategy",
+        "description": "Professional collection guide to help you build the perfect Labubu collection and make smart investment choices."
+      },
+      "tip2": {
+        "title": "Value Assessment",
+        "description": "Understand the collectible value and market price trends of each series to make informed purchasing decisions."
+      },
+      "tip3": {
+        "title": "Community Connection",
+        "description": "Connect with other collectors, trade, share experiences, and discover rare variants together."
+      }
+    },
+    "seriesDetails": {
+      "metaTitle": "Labubu Series Details & Collector Information",
+      "metaDescription": "Explore detailed information about Labubu {seriesName} series, including release date ({releaseDate}), price ({price}), rarity ({rarity}) and available colors. {description}",
+      "imageAlt": "Labubu Series",
+      "mainImageAlt": "Main Image",
+      "backToSeries": "Back to All Series",
+      "releaseDate": "Release Date",
+      "referencePrice": "Reference Price",
+      "collectorValue": "Collector Value",
+      "specialFeatures": "Special Features",
+      "notFound": {
+        "title": "Series Not Found",
+        "description": "Oops! We couldn't find the Labubu series you're looking for."
+      },
+      "features": {
+        "largeFormat": "Large format: 22.8 inches tall",
+        "movableEyes": "Movable eyes for rich expressions",
+        "materials": "Materials: PVC/Polyester/ABS",
+        "ageRestriction": "Not suitable for children under 15."
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn more about our company and mission",
+    "description": "Comprehensive about us content that builds trust and credibility with your audience."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest insights and updates",
+    "featuredPosts": "Featured Posts",
+    "allPosts": "All Posts",
+    "readTime": "min read",
+    "publishedOn": "Published on"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Your Company Name. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "sitemap": "Sitemap"
+  },
+  "errors": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist.",
+      "backHome": "Back to Home"
+    },
+    "500": {
+      "title": "Something went wrong",
+      "description": "We're working to fix this issue.",
+      "tryAgain": "Try Again"
+    }
+  }
+} 

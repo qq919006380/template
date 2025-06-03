@@ -1,0 +1,20 @@
+{
+  "name": "Labubu Collection Hub",
+  "short_name": "Labubu.city",
+  "description": "The ultimate Labubu collection hub featuring HD wallpapers, series guides, and rare variant identification",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf2f8",
+  "theme_color": "#ec4899",
+  "orientation": "portrait-primary",
+  "categories": ["entertainment", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/images/labubu-1.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+} 
