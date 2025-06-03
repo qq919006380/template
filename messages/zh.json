@@ -4,55 +4,55 @@
     "popmart": "POP MART",
     "zimomo": "Zimomo",
     "kasingLung": "Kasing Lung",
-    "readMore": "閱讀更多",
-    "downloadWallpapers": "下載桌布",
+    "readMore": "阅读更多",
+    "downloadWallpapers": "下载壁纸",
     "exploreSeries": "探索系列",
-    "readGuides": "閱讀指南",
+    "readGuides": "阅读指南",
     "viewSeries": "查看系列",
-    "readArticle": "閱讀文章",
+    "readArticle": "阅读文章",
     "learnMore": "了解更多",
-    "getStarted": "立即開始",
+    "getStarted": "开始使用",
     "viewMore": "查看更多",
-    "contactUs": "聯絡我們",
-    "aboutUs": "關於我們"
+    "contactUs": "联系我们",
+    "aboutUs": "关于我们"
   },
   "navigation": {
-    "home": "首頁",
-    "wallpapers": "桌布",
+    "home": "首页",
+    "wallpapers": "壁纸",
     "series": "系列",
-    "blog": "部落格",
-    "about": "關於",
-    "services": "服務",
-    "products": "產品",
-    "contact": "聯絡"
+    "blog": "博客",
+    "about": "关于",
+    "services": "服务",
+    "products": "产品",
+    "contact": "联系"
   },
   "home": {
-    "title": "歡迎來到您的網站",
-    "subtitle": "您引人注目的副標題，描述您的價值主張",
-    "description": "詳細描述您提供的服務以及為什麼訪客應該選擇您。",
+    "title": "欢迎来到您的网站",
+    "subtitle": "您的引人注目的副标题，描述您的价值主张",
+    "description": "详细描述您提供的服务以及访客为什么应该选择您。",
     "hero": {
-      "title": "您的英雄標題",
-      "subtitle": "您的英雄副標題與行動呼籲",
-      "cta": "立即開始"
+      "title": "您的主标题",
+      "subtitle": "您的主副标题和行动号召",
+      "cta": "立即开始"
     },
     "features": {
-      "title": "為什麼選擇我們",
-      "subtitle": "發現我們的不同之處",
+      "title": "为什么选择我们",
+      "subtitle": "发现我们的独特之处",
       "feature1": {
         "title": "特色一",
-        "description": "您第一個主要特色或優勢的描述"
+        "description": "您的第一个关键特色或优势的描述"
       },
       "feature2": {
-        "title": "特色二", 
-        "description": "您第二個主要特色或優勢的描述"
+        "title": "特色二",
+        "description": "您的第二个关键特色或优势的描述"
       },
       "feature3": {
         "title": "特色三",
-        "description": "您第三個主要特色或優勢的描述"
+        "description": "您的第三个关键特色或优势的描述"
       }
     },
-    "featuresTitle": "發現 {labubu} 的魅力",
-    "featuresSubtitle": "從收藏指南到系列介紹，我們提供最專業的 {labubu} 內容",
+    "featuresTitle": "发现 {labubu} 的魅力",
+    "featuresSubtitle": "从收藏指南到系列介绍，我们提供最专业的 {labubu} 内容",
     "wallpapersTitle": "高清桌布",
     "wallpapersDescription": "最完整的 {labubu} 高清桌布收藏，支援多種解析度下載來裝飾您的設備螢幕",
     "blogTitle": "收藏指南",
@@ -110,79 +110,79 @@
   },
   "series": {
     "title": "系列指南",
-    "subtitle": "完整收藏所有 {labubu} 系列，包括發行日期、參考價格、稀有度等級和詳細資訊。從經典系列到限定版，一站式指南了解 {labubu} 收藏價值。",
-    "totalSeries": "總系列數",
-    "totalVariants": "總變體數",
-    "limitedEditions": "限定版",
+    "subtitle": "完整收录所有{labubu}系列，包含发行日期、参考价格、稀有度等详细信息。从经典系列到限定版本，您的{labubu}收藏价值一站式指南。",
+    "totalSeries": "总系列数",
+    "totalVariants": "总变体数",
+    "limitedEditions": "限定版本",
     "collectionRate": "收藏率",
-    "colorVariants": "顏色變體",
-    "status": "狀態",
+    "colorVariants": "颜色变体",
+    "status": "状态",
     "collectionTipsTitle": "收藏技巧",
     "rarity": {
       "common": "普通",
       "rare": "稀有",
       "superrare": "超稀有",
       "limitededition": "限定版",
-      "exclusive": "獨家版",
-      "classic": "經典",
-      "regular": "常規",
+      "exclusive": "独家",
+      "classic": "经典",
+      "regular": "常规",
       "limited": "限量",
-      "holidaylimited": "節日限定",
-      "seasonallimited": "季節限定",
-      "specialmaterial": "特殊材質",
-      "premiumlimited": "高級限定",
-      "anniversaryedition": "週年版",
+      "holidaylimited": "节日限定",
+      "seasonallimited": "季节限定",
+      "specialmaterial": "特殊材质",
+      "premiumlimited": "高级限定",
+      "anniversaryedition": "周年版",
       "collectorsedition": "收藏家版",
-      "ultrarare": "超稀有"
+      "ultrarare": "超级稀有"
     },
     "statusLabel": {
-      "available": "有現貨",
-      "soldout": "售完",
+      "available": "有现货",
+      "soldout": "售罄",
       "limited": "限量"
     },
     "collectionTips": {
       "tip1": {
         "title": "收藏策略",
-        "description": "專業收藏指南，幫助您建立完美的 Labubu 收藏，做出明智的投資選擇。"
+        "description": "专业收藏指南，帮助您打造完美的Labubu收藏并做出明智的投资选择。"
       },
       "tip2": {
-        "title": "價值評估",
-        "description": "了解每個系列的收藏價值和市場價格趨勢，做出明智的購買決策。"
+        "title": "价值评估",
+        "description": "了解每个系列的收藏价值和市场价格趋势，做出明智的购买决策。"
       },
       "tip3": {
-        "title": "社群連結",
-        "description": "與其他收藏家連結，交換、分享經驗，一起發現稀有變體。"
+        "title": "社区联系",
+        "description": "与其他收藏家联系，交易、分享经验，一起发现稀有变体。"
       }
     },
     "seriesDetails": {
-      "metaTitle": "Labubu 系列詳情與收藏家資訊",
-      "metaDescription": "探索 Labubu {seriesName} 系列的詳細資訊，包括發行日期（{releaseDate}）、價格（{price}）、稀有度（{rarity}）和可用顏色。{description}",
-      "imageAlt": "Labubu 系列",
-      "mainImageAlt": "主圖片",
+      "metaTitle": "Labubu系列详情与收藏信息",
+      "metaDescription": "探索Labubu {seriesName}系列的详细信息，包括发行日期（{releaseDate}）、价格（{price}）、稀有度（{rarity}）和可用颜色。{description}",
+      "imageAlt": "Labubu系列收藏",
+      "mainImageAlt": "主要系列图片",
       "backToSeries": "返回所有系列",
-      "releaseDate": "發行日期",
-      "referencePrice": "參考價格",
-      "collectorValue": "收藏價值",
+      "releaseDate": "发行日期",
+      "referencePrice": "参考价格",
+      "collectorValue": "收藏价值",
       "specialFeatures": "特殊功能",
       "notFound": {
-        "title": "系列未找到",
-        "description": "糟糕！我們找不到您要尋找的 Labubu 系列。"
+        "title": "未找到系列",
+        "description": "抱歉！我们找不到您要查找的Labubu系列。"
       },
       "features": {
-        "largeFormat": "大尺寸：22.8 英寸高",
-        "movableEyes": "可動眼睛，表情豐富",
-        "materials": "材質：PVC/聚酯纖維/ABS",
-        "ageRestriction": "不適合 15 歲以下兒童。"
+        "largeFormat": "大尺寸：22.8英寸高",
+        "movableEyes": "可动眼球，表情丰富",
+        "materials": "材质：PVC/聚酯纤维/ABS",
+        "ageRestriction": "不适合15岁以下儿童。"
       }
     }
   },
   "blog": {
-    "title": "部落格",
-    "subtitle": "最新見解和更新",
-    "featuredPosts": "精選文章",
+    "title": "博客",
+    "subtitle": "最新见解和更新",
+    "featuredPosts": "精选文章",
     "allPosts": "所有文章",
-    "readTime": "分鐘閱讀",
-    "publishedOn": "發布於",
+    "readTime": "分钟阅读",
+    "publishedOn": "发布于",
     "resourcesTitle": "全面 {labubu} 收藏資源",
     "resourcesDescription": "我們的部落格涵蓋從稀有 {labubu} 變體和市場分析到 Pop Mart 合作和認證技巧的所有內容。發現最新的收藏策略，展現 {labubu}、{zimomo} 和其他設計師玩具。",
     "whatIsLabubu": {
@@ -298,17 +298,17 @@
     }
   },
   "meta": {
-    "siteTitle": "您的網站標題 - 專業與現代",
-    "siteName": "您的網站名稱",
-    "siteDescription": "您的全面網站描述，用於SEO優化。請包含您的主要關鍵詞和價值主張。",
-    "authorName": "您的公司名稱",
-    "creator": "您的公司",
-    "publisher": "您的出版商",
-    "twitterHandle": "@yourhandle",
-    "category": "商業",
-    "keywords": "關鍵詞1, 關鍵詞2, 關鍵詞3, seo, 優化",
-    "seriesTitle": "Labubu 系列指南 | 完整收藏與價格 2024",
-    "seriesDescription": "完整的 Labubu 系列收藏指南，包含發行日期、參考價格和稀有度等級。從經典系列到限定版，為收藏家提供全方位資訊。",
+    "siteTitle": "Labubu.city - 完整指南与高清壁纸",
+    "siteName": "Labubu.city",
+    "siteDescription": "您的终极Labubu收藏中心，提供高清壁纸、完整系列指南、稀有款信息和专业收藏技巧，专注POP MART设计师玩具收藏。",
+    "authorName": "Labubu.city",
+    "creator": "Labubu收藏中心",
+    "publisher": "Labubu.city",
+    "twitterHandle": "@labubu_city",
+    "category": "收藏品",
+    "keywords": "Labubu, 收藏玩具, 设计师玩具, POP MART, 盲盒, 高清壁纸, 系列指南",
+    "seriesTitle": "Labubu系列收藏 | 完整指南与价格 | Labubu.city",
+    "seriesDescription": "完整的Labubu系列指南，包含发行日期、价格、稀有度等详细信息。从经典收藏到限定版本，您的终极Labubu收藏资源。",
     "blogTitle": "Labubu 部落格 - 收藏指南與專家見解",
     "blogDescription": "發現 Labubu 收藏專家指南、稀有變體識別、系列分析，以及來自經驗豐富收藏家的專業技巧。",
     "blog": {
@@ -319,37 +319,37 @@
     }
   },
   "about": {
-    "title": "關於我們",
-    "subtitle": "了解更多關於我們的公司和使命",
-    "description": "全面的關於我們內容，與您的受眾建立信任和可信度。"
+    "title": "关于我们",
+    "subtitle": "了解更多关于我们的公司和使命",
+    "description": "全面的关于我们内容，建立与您的受众的信任和可信度。"
   },
   "contact": {
-    "title": "聯絡我們",
-    "subtitle": "與我們的團隊取得聯繫",
+    "title": "联系我们",
+    "subtitle": "与我们的团队取得联系",
     "form": {
       "name": "全名",
-      "email": "電子郵件地址",
-      "subject": "主題",
-      "message": "訊息",
-      "submit": "發送訊息"
+      "email": "电子邮箱",
+      "subject": "主题",
+      "message": "消息",
+      "submit": "发送消息"
     }
   },
   "footer": {
-    "copyright": "© {year} 您的公司名稱。保留所有權利。",
-    "privacy": "隱私政策",
-    "terms": "服務條款",
-    "sitemap": "網站地圖"
+    "copyright": "© {year} 您的公司名称。保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "sitemap": "网站地图"
   },
   "errors": {
     "404": {
-      "title": "找不到頁面",
-      "description": "您要尋找的頁面不存在。",
-      "backHome": "返回首頁"
+      "title": "页面未找到",
+      "description": "您要查找的页面不存在。",
+      "backHome": "返回首页"
     },
     "500": {
-      "title": "出了些問題",
-      "description": "我們正在努力解決這個問題。",
-      "tryAgain": "再試一次"
+      "title": "出了些问题",
+      "description": "我们正在努力解决这个问题。",
+      "tryAgain": "重试"
     }
   }
 } 

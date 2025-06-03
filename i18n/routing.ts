@@ -1,10 +1,10 @@
 import {defineRouting} from 'next-intl/routing';
 
 export const routing = defineRouting({
-  // 支持的语言列表：英语和中文
+  // 支持的语言：英语和中文
   locales: ['en', 'zh'],
   
-  // 默认语言
+  // 默认语言：英语
   defaultLocale: 'en',
   
   // 只有非默认语言才在URL中显示语言前缀
